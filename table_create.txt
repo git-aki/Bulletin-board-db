@@ -1,0 +1,5 @@
+CREATE DATABASE bulletin_board CHARACTER SET utf8;
+
+CREATE TABLE `bulletin_board`.`list` ( `id` INT NOT NULL AUTO_INCREMENT , `author` VARCHAR(50) NOT NULL , `content` TEXT NULL DEFAULT NULL , `image` VARCHAR(100) NULL DEFAULT NULL , `time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , `updatetime` DATETIME on update CURRENT_TIMESTAMP NULL DEFAULT NULL , `thread_id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+CREATE TABLE `bulletin_board`.`thread` ( `thread_id` INT NOT NULL AUTO_INCREMENT ,  `thread_name` VARCHAR(50) NOT NULL ,    PRIMARY KEY  (`thread_id`)) ENGINE = InnoDB;

@@ -1,0 +1,32 @@
+h1 {
+  border-bottom: 1px solid darkgreen;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+body {
+  background-color: rgb(202, 218, 243);
+}
+
+main,div {
+  border-bottom: 1px solid darkgreen;
+  padding-bottom: 10px;
+}
+
+button {
+  opacity: 0.8;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+  box-shadow: none;
+}
